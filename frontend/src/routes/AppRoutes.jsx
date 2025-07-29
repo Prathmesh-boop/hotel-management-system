@@ -8,7 +8,7 @@ import BookingPage from "../pages/BookingPage";
 import DashboardLayout from "../layouts/DashboardLayout";
 import ProfilePage from "../pages/ProfilePage";
 import SettingsPage from "../pages/SettingsPage";
-
+import BookingsPage from "../pages/BookingsPage";
 const AppRoutes = () => {
   return (
     <Routes>
@@ -21,7 +21,10 @@ const AppRoutes = () => {
         <Route path="profile" element={<ProfilePage />} /> {/* ✅ Add here */}
         <Route path="settings" element={<SettingsPage />} /> {/* ✅ Add here */}
         <Route path="hotels" element={<HotelList />} />
-        <Route path="bookings" element={<BookingPage />} />
+        {/* ✅ Bookings list page */}
+        <Route path="bookings" element={<BookingsPage />} />
+        {/* ✅ Booking form page */}
+        <Route path="booking" element={<BookingPage />} />
       </Route>
     </Routes>
   );

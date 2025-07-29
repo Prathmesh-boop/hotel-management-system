@@ -84,7 +84,7 @@ const DashboardPage = () => {
 
   return (
     <div>
-      <h2 className="text-xl font-bold mb-4">Welcome to Dashboard</h2>
+      <h2 className="text-2xl font-bold mb-4">Welcome to Dashboard</h2>
       {userInfo ? (
         <div className="bg-white p-4 rounded shadow">
           <p className="text-gray-700">Username: {userInfo.username}</p>
